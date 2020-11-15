@@ -33,7 +33,14 @@ namespace AnandarajCodingTest
 
         private static void PermutionofPalidrome()
         {
-            throw new NotImplementedException();
+            Palindrome palindrome = new Palindrome();
+
+            Console.WriteLine("Enter a string value");
+
+            char[] inputValue = Console.ReadLine().ToCharArray();
+            int inputLength = inputValue.Length;
+
+            palindrome.PrintAllPalinPermutations(inputValue, inputLength);
         }
 
         private static void BinarySearchTree()
