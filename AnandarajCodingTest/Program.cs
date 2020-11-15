@@ -12,7 +12,7 @@ namespace AnandarajCodingTest
         {
             Console.WriteLine("Anandaraj Coding Test - 9940895758");
             Console.WriteLine("");
-            Console.WriteLine("Enter your choice: \n 1.Binary Search: \n 2.Palindrome");
+            Console.WriteLine("Enter your choice: \n 1.Binary Search: \n 2.Palindrome \n 3.Reverser Linked List");
             Console.WriteLine("");
             switch (Convert.ToInt32(Console.ReadLine()))
             {
@@ -24,11 +24,23 @@ namespace AnandarajCodingTest
                     PermutionofPalidrome();
                     break;
 
+                case (int)TaskEnum.ReverseLinkedList:
+                    ReverseLinkedList();
+                    break;
+
                 default:
                     break;
             }
 
             Console.ReadLine();
+        }
+
+        private static void ReverseLinkedList()
+        {
+            ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+            Console.WriteLine("Enter a number for LinkedList");
+
+            reverseLinkedList.Main(Convert.ToInt32(Console.ReadLine()));
         }
 
         private static void PermutionofPalidrome()

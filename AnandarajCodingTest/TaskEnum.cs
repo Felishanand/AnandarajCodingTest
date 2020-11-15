@@ -7,6 +7,7 @@ namespace AnandarajCodingTest
     public enum TaskEnum
     {
         BinarySearchTree = 1,
-        Palindrome = 2
+        Palindrome = 2,
+        ReverseLinkedList = 3
     }
 }
