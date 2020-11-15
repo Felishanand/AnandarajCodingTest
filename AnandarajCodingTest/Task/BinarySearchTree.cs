@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AnandarajCodingTest.Task
 {
-    public class BinarySearchTree : ICodingTest
+    public class BinarySearchTree
     {
         private class Node
         {
